@@ -1,0 +1,699 @@
+Day 1:
+-----
+Software Testing Introduction
+What is Testing?
+SDLC life cycle
+Software Testing Methodologies-White Box,Black Box, GreyBox Testing
+
+Why testing?
+
+Manual Testing: 
+	Writing and executing the testcases without any help of tool support. 
+	Test case document will have the steps. 
+
+Automation testing: 
+	Write and exeucute test script with the help of tool Eg: Selenium.
+
+What is Testing? Process of evaluating a system.
+
+Who does testing?
+	1. Dvelopers will also do testing that is called as Unit Testing.
+	2. Managers will also do testing that is called as Exploratory testing.
+	3. User will also do that is called as UAT - User Acceptance Testing.
+
+When to do the testing?  
+	=> Build Ready.
+	=> Once the test case document is written and approved we can perform testing.
+	=> Setup the environmet 
+	=> Test data
+	=> In the inital stage of SDLC.
+--------------W3
+
+When to stop the testing?
+
+	=> When all the test cases are executed and there is no high severity and high preority defect
+	=> Management decides to stop testing.
+
+Difference between Testing and de-bugging:
+	- Tetsing is the process to find defect without correcting (Done by Tester)
+	- Debugging is to find the defect and correct the code ( Done by developers)
+
+
+SDLC - Software Development Life Cycle.
+---------------------------------------
+Stuctured Process - 6 phases
+To deliver a high quality product, with low cost and in the shortest possible duration of time. 
+
+1.Requirement Analysis and Planning
+	 BA -> Business Analyst -> they will collect all the details from the client and prepare a document called 
+		BRS (Business Requirement Specification)
+	
+	BA's will conduct meeting with Tech Leads and discuss about the requirement.
+	Only if the Tech leads are OK, then they will prepare 
+	1. FRS (Functional Req Specification)  -> It contains all the functionality details e.g: Login Functionlity, Sign up functionality
+	2. SRS(Software Req Specification) -> What needs in Login functionality, like what fields needs to be present. 
+	Once the SRS document is ready, we can start writting the test cases.
+
+
+2. Design
+	During this phase 2 documents will be prepared
+		1. HLD (High Level Design Document)
+			=> Contains overall architecture
+			=> Prepared by Domain expert (Solution Architect)
+Day 1: JAT15WD
+			=> They will also design Table and Database as well.
+
+		2. LLD (Low Level Design Document)
+			 
+			=> Convert all the high level informatio  to low level. i.e detailed description
+
+3. Development 
+	=> Development Team writes the code and once the build is ready it will be given to testing team.
+
+4. Testing 
+	Tester will do End-to-End testing. 
+	STLC - Software Testing Lifecycle. 
+
+5. Deployment 
+
+6. Maintenance Phase 
+
+Software Testing Methodologies-White Box,Black Box, GreyBox Testing
+
+
+WhiteBox Testing:
+
+->Done by Developers
+-> Backend code will be tested line by line
+-> Structural Based testing
+
+Black Box Testing:
+
+-> Done by Testers. 
+-> End-to-End testing
+-> 2 types: Non-Functional testing and Functional Testing
+-> Specification Based testing.
+
+Grey Box Testing:
+
+-> Combination of WhiteBox and Black Box
+-> Done by tester and developer.
+
+  
+
+
+Day 2: 
+------
+SDLC phases-Requirements Phase,Analysis Phase,Design phase,Coding Phase,Testing phase,Delivery and Maintenance Phase
+SDLC Models-Waterfall Model.,V Model,Agile Model,Spiral Model.
+Test Case Design Techniques-
+Levels of Testing
+
+SDLC Models:
+------------
+
+Waterfall Model: 
+-----------------
+	Linear sequential model. 
+	Without completing the previous phase, the next phase cannot be started. 
+Where to use?
+	=> Small project
+	=> When the requirements are stable.
+
+Advantages: 
+	=> Each phase is clearly defined.
+	=> Each phase is completely done one at a time.
+	=> Cost and time is calculated before the start.
+
+Disadvantages:
+	=> Adapting changes to the requirement
+	=> Client interaction will not be available throughout.
+
+V- Model:  Verfication and Validation
+---------
+Verfication -> static testing -> don't execute anything just check
+Validation -> Dynamic testing -> execute the steps. 
+
+Are you builing the product right? - Verification 
+Are you building the right product? - Validation 
+
+Login -> UN, password -> UN -> 30 chars , pass -> 8 chars 
+
+Where to use?
+	=> Requirement can change but not too frequently.
+	=> High success rate compared to waterfall model
+	=> Development and testing can happan paralelly.
+
+Disadvantage:
+	=> Requirement cannot change frequently
+	=> When the projects are large and complex V-model is not preferable.
+	=> 
+
+Agile Model: 
+------------
+	Iterative and Incremental 
+	When we can go? When requirement gets changed.
+	
+Term agile means -> the ability of response to changes from requirements, technology and people.
+
+
+Spiral Model:
+-------------
+	It's combination of waterfall and iterative model. 
+	Each phae begins with design goal and ends with client reveiwing.
+	Software is developed in a series of incremental releases.
+
+Phase 1: Communication 
+Phase 2: Planning 
+Phase 3: Modeling 
+Phase 4: Construct
+Phase 5: Deployment
+
+1st spiral -> concept development
+2nd spiral -> System development
+3rd spiral -> System Enhancement
+4th spiral -> System Maintenance.
+
+When to use? 
+	=> Large project
+	=> When releases are required to be frequently 
+	=> When requirements are unclear and complex.
+	=> For medium to high risk project.
+
+Advantages: 
+	=> Additional functionality or changes can be done at later stage.
+	=> Cost estimation becomes easy
+	=> Development is fast and features are added in a systematic way.
+	=> There is always a space for customer feedback
+
+Disadvantages: 
+	=> Documentation is more
+	=> Risk is not meeting schedule on budget. 
+
+
+Test case Design Technique:
+
+Login -> UN, password -> UN -> 30 chars , pass -> 8 chars 
+
+L
+LE
+LEE
+
+1st test data - with 30 characters  - Allow me to login  - Positive test case.
+2nd test data - with 31 characters  - It should show me the error. - Negative test case. 
+
+We cannot test all the possible way, so we use techniques to obtain the required test data to be tested.
+Reduce the size of input and obtain the best input. 
+ 
+We have 2 categories:
+	=> Static technique  -> line by line review of test case document
+		-> Review 
+			=> Informal Review -> Domain expert
+			=> Walkthrough -> Peer review 
+			=> Technical review -> Tech lead 
+			=> Inspection -> Formal review
+
+		-> Static Analysis
+			=> using external tool review will happen. 
+
+	=> Dynamic technique
+		To test the functionality we will give input and test.
+
+1. Equivalance Class Partitioning
+2. Boundary Value Analysis
+3. Decision Table Testing
+4. State Transition Testing
+5. Use Case Testing
+
+1. Equivalance Class Partitioning:
+
+Login -> UN -> 1 to 40 chars 
+
+range is 1 - 40 --> You can partition the rage of values in to equal classes
+
+1 to 10    11 to 20     21 to 30    31 to 40  -> 4 class (valid condition) ---> positive testing
+
+Below 1   Above 40  ---> 2 classes (invalic condition) ----> negative testing
+
+1st test data - 1 to 10 chars   - Leema 
+2nd -> 11 to 20 chars - 
+3rd -> 21 to 30 chars
+4th -> 31 to 40 chars 
+
+2. Boundary value analysis:
+
+Login -> UN -> 1 to 40 chars 
+
+A -> 1 -> minimum boundary
+B -> 40 -> maximum boundary 
+
+A-1, A, A+1,B-1,B,B+1
+
+0,1,2,39,40,41
+
+0 AND 41 - Negative test case
+
+1,2,39,40 - positive.
+
+3. Decision Table Testing
+---------------------------
+Formula: 2^n  ---> n = no.of test conditions we have (i/p)
+
+UN and pass -> 2 condition ----> 4 condtions
+
+Example: 2 condtion to vote
+	1. He/She should be an Indian Citizen
+	2. His/her age should be above 18
+
+2^n - 4 test cases
+
+4. State Transition Testing
+---------------------------
+
+
+5. Use Case Testing
+	Digramatic representation of the document
+	
+
+Basic user    
+Permimum user 	
+
+2 use case :
+Listen to the song
+Skip the ad
+
+
+Basic -----> Listen to the song use case
+Permimum user --->Listen to the song use case
+		----> Skip the ad
+
+
+Levels of Testing: 
+
+1. Unit Testing: Smallest part is unit
+	-> It is done by developers
+	-> Testing the induvidual part is called unit tetsing.
+	-> Unit testing comes under white Box testing
+	-> Code testing is called as unit testing
+
+2. Integration Testing: Intergrate -> combine, consolidate
+	-> Combining the logically related  modules togehther abd perfirming the testing is called Integration
+	-> To check the data flow/ connectivity.
+	-> To check whether our application is moving from one page to another / one app to another.
+	-> Done either bu developer or tester.
+	-> Comes under grey box testing
+
+3. System Testing:
+	-> End to end testing , from login to logout
+	-> Done by Tester
+	-> Comes under black box testing
+
+4. Acceptance Testing:
+	1. Internal Acceptance -> Alpha tetsing -> Developer site. -- Person who is not involved in the product.
+	2. External Testing -> UAT -> Beta Testing -> end user site. 
+
+
+
+
+
+
+Day 3:
+------
+Software Testing Life Cycle
+QA & QC & Testing
+
+STLC:
+	Sequence of different activity performed only by tetsing team.
+
+1. Requirement Analysis
+2. Test Planning
+3. Test Case Development
+4. Test Environment Setup
+5. Test Execution
+6. Test Closure.
+
+1. Requirement Analysis:
+	Here if the the testing team having any doubts they conduct a meeting with BA, Dev team, all stake holders. Once they clarify all their 
+doubts, they will prepare 2 documnents:
+
+	i) Automation Feasibility Report: 
+		if the score is above 70 ---> They can go ahead for automation
+		if the score is below 50 ---> They will go for manual
+		if the score is between 50 to 70 --> submit proof of concept. 
+
+	ii) Requirement Tracebility Matrix: (RTM)
+		they just map all the business requirements with the test cases. 
+
+
+2. Test Planning: 
+	Only the Lead or Manager will involve and they will prepare 2 documents:
+	
+		i) Statergy document:
+			It is a high level document which contains the over all approach for an entire testing process. This will be prepared by Test 				Lead/Manager.
+			It varies from org to org but inside and org it is same for all the projects. 
+
+		ii) Test Plan: Test Lead/ Manager
+			It a high level document which contains all the planning activities for an entire testing process. 
+
+			Contains:
+				a) scope b) Objective c) features to be tested d) features not to be tested e) cost and time estimation
+				f) risk and mitigation g) staffing and training. 
+
+
+3. Test Case Development:
+	If its a automation we will write test scripts
+	If its a manual we will write test cases.
+
+Test Scenario --> document which contains what are all the functionalities that needs to be tested?
+		Eg: Login Functionality, Signup Functionality, Payment, Checkout.
+
+Test case document ---> How the functionality needs to be tested?
+
+	Test steps ---> step by step description to execute your test case. 
+
+4. Test Environment Setup
+	Test Bed : Configuring the software and hardware that is required for testing.
+	Smoke Testing --> Build Verfication Testing. 
+
+
+5. Test Execution:
+	=> Execution of test case/scripts
+	=> Reporting the test result
+	=> Log the deffect for failed test case
+	=> Retesting of the defect
+	=> Close the defect
+
+6. Test Closure:
+	If there is no high priority bug, test will be closed. 
+
+	Test closure report / test summary report: 		
+		How many test cases written
+		How many passed
+		How many failed
+		How defects were reports
+
+QA & QC & Testing:
+-----------------
+
+Quality Assurance:
+	Set of process that helps to "avoid" deffects and assure quality.
+	Ensuring that a company is providing a high quality product. 
+	Part of SDLC
+	Whole team is responsible for that.
+	Preventive approah 
+
+Quality Control:
+	Set of actiites that helps to detect defects and quality issue before handing it to the customer.
+	Part of STLC  -> Only testinf team is responsible. 
+	Finding the bug and getting it fixed
+	Subset of QA
+	Reactive approah.
+	
+Testing: Is one of the way to detect the defects.
+
+
+
+
+Day - 7 : Git & Github
+----------------------
+	Github Signup,Download & Install Git,Git Setup: Your Name & Email,Create a New Local Git Repository (Initialize Repository),Stage & Commit Files,Push to a Remote Repository,Clone (Download) a Remote Repository,Git Pull and Merge
+
+Version control system - Changes made to local system over a period of time, we have to maintain the version.
+
+
+Git - Version control system tracking tool with which we can make entire project code at one place to the github. (Local system)
+GitHub - It's like a godown where we keep central copy of our entire files, code, test etc.,(Remote location).
+
+--------------------------------------------------------
+
+1. Create Repo
+2. Created a folder and file in local system
+				Create a folder: 
+					make directory --> mkdir folder_name 
+				Change directory --> cd folder_name
+				Create a file:
+					touch Firstfile.txt
+        cd .. --> move to previous directory.
+        
+3. Configuraion. -  git config --global user.name "LeemaJose03"
+			git config --global user.email "leejo1803@gmail.com"
+
+4. git init - .git inside your project directory. (Its a hidden file)
+	intializes the new repo when we work on the projrct in initial stages. (only one time).
+
+a) 2 stages: 1) Staging area 2) Commit area
+
+
+5. git add . (all the files of the folder will be included)
+	git add filename (only that will be included) eg: git add firstfile.txt 
+
+6. git commit -m "Your message" 
+
+7. git status - To check the status
+
+8. git branch -m main  // not necessary, if this is used then use "git push origin main" to push the code
+
+9. git remote add origin "repo url.git"
+
+10. git push origin master 
+
+
+Clone (Download) a Remote Repository Git Pull and Merge:
+--------------------------------------------------------
+
+=> First Forking - Remote(someother person) to remote(yours) copy
+=> git clone "your url"(yours to yours) - remote to local
+	We made some changes to the files
+=> cd (to folder)
+=> git checkout -b - to set branch
+=> git remote add upstream "your url.git"
+=> git init
+=> git add .
+=> git commit -m "some message"
+=> git push -u origin (branch name)
+=> Go to your profile (compare and pull request) - verify and create pull request
+=> the person has to accept. 
+
+
+git commands:
+------------
+
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$ mkdir JAT15WD
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$ cd JAT15WD
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ touch FirstFile.txt
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ cd ..
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$ ^C
+
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$ cd JAT15WD
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ touch SecondFile.txt
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ touch ThirdFile.txt
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ cd..
+bash: cd..: command not found
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ cd ..
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$ git config --global user.name "LeemaJose03"
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$ git config --global user.email "leejo1803@gmail.com"
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$ ^C
+
+
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Admin/OneDrive/Desktop/.git/
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$ cd JAT15WD
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git init
+Initialized empty Git repository in C:/Users/Admin/OneDrive/Desktop/JAT15WD/.git/
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git add .
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git statux
+git: 'statux' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   FirstFile.txt
+        new file:   SecondFile.txt
+        new file:   ThirdFile.txt
+
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git commit -m "First commit"
+[master (root-commit) 1b5291c] First commit
+ 3 files changed, 1 insertion(+)
+ create mode 100644 FirstFile.txt
+ create mode 100644 SecondFile.txt
+ create mode 100644 ThirdFile.txt
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git remote add origin https://github.com/LeemaJose03/JAT15WDTest.git
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 297 bytes | 29.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/LeemaJose03/JAT15WDTest.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git add .
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   FourthFile.txt
+
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git commit -m "Adding new file to the repo"
+[master 312cf4c] Adding new file to the repo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 FourthFile.txt
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git remote add origin https://github.com/LeemaJose03/JAT15WDTest.git
+error: remote origin already exists.
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git remote rm origin
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git remote add origin https://github.com/LeemaJose03/JAT15WDTest.git
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 246 bytes | 123.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/LeemaJose03/JAT15WDTest.git
+   1b5291c..312cf4c  master -> master
+branch 'master' set up to track 'origin/master'.
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop/JAT15WD (master)
+$ cd ..
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$ mkdir Firstname second
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$ touch fil1.txt file 2.txt
+
+Admin@DESKTOP-RFGG51U MINGW64 ~/OneDrive/Desktop (master)
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
